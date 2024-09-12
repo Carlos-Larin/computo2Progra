@@ -13,7 +13,6 @@ class ventanaNoWindow(QMainWindow):
         super().__init__()
         uic.loadUi("Ejercicio1.ui",self)
       
-
 app = QApplication(sys.argv)
 ventana = ventanaNoWindow()
 ventana.show()
