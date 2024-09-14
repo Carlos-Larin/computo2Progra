@@ -91,8 +91,8 @@ class firulais(QMainWindow):
             self.initDato2.clear()
             self.initDato3.clear()
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    ventana = firulais()
-    ventana.show()
-    sys.exit(app.exec_())
+#Ejecutar la aplicación
+app = QApplication(sys.argv)
+ventana = firulais()
+ventana.show()
+sys.exit(app.exec_())
