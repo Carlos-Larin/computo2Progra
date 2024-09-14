@@ -3,7 +3,7 @@
 """
 Ejercicio 4 el perroj
 """
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QLabel, QLineEdit, QPushButton, QListWidget, QVBoxLayout, QHBoxLayout
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QLabel, QLineEdit, QPushButton, QListWidget, QVBoxLayout, QHBoxLayout,QGridLayout
 from PyQt5.QtGui import QFont, QPalette, QColor
 import sys
 
@@ -13,7 +13,7 @@ class firulais(QMainWindow):
         
         # Configurar la ventana principal
         self.setWindowTitle("Ejercicio 4 - Las mascotas")
-        self.setGeometry(100, 100, 500, 300)
+        self.setGeometry(100, 100, 500, 400)
 
         #y para que no se vea tan simple el fondo
         fondocolor=QPalette()
@@ -53,16 +53,18 @@ class firulais(QMainWindow):
         self.listaAnimales = QListWidget(self)
 
         # Layout para organizar los widgets
-        layout = QVBoxLayout()
-        
-        layout.addWidget(self.Dato1)
-        layout.addWidget(self.initDato1)
+        layout = QGridLayout()
+        #                          (y,x)
+        layout.addWidget(self.Dato1,0,0)
+        layout.addWidget(self.initDato1,0,1)
         layout.addWidget(self.Dato2)
         layout.addWidget(self.initDato2)
         layout.addWidget(self.Dato3)
         layout.addWidget(self.initDato3)
-        layout.addWidget(self.btnSubirDatos)
-        layout.addWidget(self.listaAnimales)
+        layout.addWidget(self.btnSubirDatos,2,2)
+        layout.addWidget(self.listaAnimales,4,0,2,4)
+
+     
 
         # Asignar el layout al widget base
         basePrincipal.setLayout(layout)
