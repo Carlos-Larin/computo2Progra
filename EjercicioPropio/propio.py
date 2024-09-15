@@ -38,14 +38,14 @@ class Taller(QMainWindow, Ui_TallerCocolito):
             mano_obra = float(self.inMano.text()) if self.inMano.text() else 0.0
             
             # Calcular el precio base
-            precio_final = precio_material + mano_obra
+            precioFinal = precio_material + mano_obra
             
             # Verificar si el radio button de "Con descuento" está activado
             if self.radioConDescuento.isChecked():
-                precio_final *= 0.9  # Aplicar un 10% de descuento
+                precioFinal *= 0.9  # Aplicar un 10% de descuento
 
             # Mostrar el resultado en el campo de precio final
-            self.txtPrecioFinal.setText(f"{precio_final:.2f}")  # Mostrar el número con 2 decimales
+            self.txtPrecioFinal.setText(f"{precioFinal:.2f}")  # Mostrar el número con 2 decimales
             
         except ValueError:
             # En caso de que no se pueda convertir el texto en número, mostrar un mensaje de error
