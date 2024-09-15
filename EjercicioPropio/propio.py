@@ -5,7 +5,7 @@ y marcando la mano de obra y el precio del costo del material usado(hierros, pin
 """
 from PyQt5.QtWidgets import QApplication, QMainWindow, QButtonGroup,QRadioButton
 from PyQt5.QtGui import QFont, QPalette, QColor,QIcon
-from ejerciciopropio_ui import Ui_TallerCocolito  # Archivo .ui generado
+from ejerciciopropio_ui import Ui_TallerCocolito
 import sys
 
 class Taller(QMainWindow, Ui_TallerCocolito):
@@ -13,9 +13,11 @@ class Taller(QMainWindow, Ui_TallerCocolito):
         super(Taller, self).__init__()
         self.setupUi(self)
 
+        #con colorcitos para que se vea mejor :D
         fondocolor=QPalette()
         fondocolor.setColor(QPalette.Window,QColor(219, 145, 225))
         self.setPalette(fondocolor)
+
         #no me funciono el logo Pipipi
         self.setWindowIcon(QIcon('casajp.png'))
         
