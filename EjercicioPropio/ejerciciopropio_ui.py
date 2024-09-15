@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_TallerCocolito(object):
     def setupUi(self, TallerCocolito):
         TallerCocolito.setObjectName("TallerCocolito")
-        TallerCocolito.resize(721, 261)
+        TallerCocolito.resize(817, 310)
         self.centralwidget = QtWidgets.QWidget(TallerCocolito)
         self.centralwidget.setObjectName("centralwidget")
         self.comboBox = QtWidgets.QComboBox(self.centralwidget)
@@ -66,7 +66,7 @@ class Ui_TallerCocolito(object):
         self.radioConDescuento.setObjectName("radioConDescuento")
         TallerCocolito.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(TallerCocolito)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 721, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 817, 21))
         self.menubar.setObjectName("menubar")
         TallerCocolito.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(TallerCocolito)
@@ -88,5 +88,5 @@ class Ui_TallerCocolito(object):
         self.lblPrecioMaterial.setText(_translate("TallerCocolito", "Precio del material: "))
         self.lblPrecioMaterial_2.setText(_translate("TallerCocolito", "Precio Mano de obra:  "))
         self.lblPrecioMaterial_3.setText(_translate("TallerCocolito", "Precio Final:  "))
-        self.radioSinDescuento.setText(_translate("TallerCocolito", "Descunento"))
+        self.radioSinDescuento.setText(_translate("TallerCocolito", "Sin Descunento"))
         self.radioConDescuento.setText(_translate("TallerCocolito", "Descunento"))

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>721</width>
-    <height>261</height>
+    <width>817</width>
+    <height>310</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -173,7 +173,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Descunento</string>
+     <string>Sin Descunento</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="radioConDescuento">
@@ -195,7 +195,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>721</width>
+     <width>817</width>
      <height>21</height>
     </rect>
    </property>
